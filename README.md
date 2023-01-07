@@ -1,20 +1,21 @@
 # Hotels
 
-#### Требования:
-* Необходимо написать приложение, которые загружает с сервера JSON с информацией о нескольких отелях, парсит его и выводит на экран данные этих отелей. Формат отображения этих данных остается на усмотрение разработчика. Пока идет загрузка данных, пользователь должен об этом знать, соответственно, необходимо отображать activity indicator (не индикатор в статусбаре).*
+## An application written without using storyboards. The entire layout was done by code using the MVC architecture.
 
-* Должна присутствовать возможность отсортировать отели по одному из двух параметров: по расстоянию отеля от центра города или по количеству свободных номеров (данные есть в JSON-файле из API). Контрол для выбора типа сортировки остаётся на усмотрение разработчика. Первичная сортировка должна совпадать с выдачей с сервера.*
+**Meaning project** : hotel selection app.
 
-* Необходимо предусмотреть возможность просмотра подробной информации об отеле на отдельном экране, включая изображение. Формат отображения данных об отеле остаётся на усмотрение разработчика. Изображение отеля имеет границу по краю шириной в 1px, обязательно надо избежать отображения этой границы в интерфейсе.*
+**Version** iOS: 14+
 
-* Приложение должно быть собрано на последнем публичном стабильном SDK и стабильно работать на 3 последних версиях iOS (например, с сентября 2022 это iOS16, iOS15 и iOS14), должно поддерживать все размеры экранов iPhone и быть оформлено с базовыми UI контролами по Apple Design Guidelines. Язык — Swift (последняя публичная стабильная версия).*
+**Stack**: UIKit,URLSession,MapKit,MVC
 
-* Код должен быть поддерживаем и переиспользуем.*
+### The app has four screens:
+**initial screen**: on the main screen, you can sort hotels by stars and remaining places, also clicking on the hotel takes you to detailed information about the hotel.
 
-* Код-стайл должен быть таким, чтобы работа в команде над подобным проектом была комфортна.*
+**detailed information about the hotel screen**: on this screen you can find out more about the hotel and by clicking on the ``Watch on map`` button you can find out where the hotel is located
 
-#### Requirements:
-* iOS 14.0+
-* MVC
-* Programmatically Layout without SnapKit
-* URLSession
+
+
+### Demonstration of the operation of screens and the operation of the application:
+<img width="334" src="https://user-images.githubusercontent.com/110721351/211159430-bcd92574-c13d-4321-ba4f-dc99fa22fa9a.gif">
+
+
