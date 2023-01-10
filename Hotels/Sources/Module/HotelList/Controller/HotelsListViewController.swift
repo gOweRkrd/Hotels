@@ -113,28 +113,5 @@ extension HotelsListViewController: UITableViewDelegate {
     }
 }
 
-// MARK: - SwiftUI Canvas
-
-import SwiftUI
-
-struct HotelsListViewControllerProvider: PreviewProvider {
-    static var previews: some View {
-        Container().edgesIgnoringSafeArea(.all)
-            .previewDevice("iPhone 14 Pro ")
-    }
-    
-    struct Container: UIViewControllerRepresentable {
-        
-        let tabBarVC = HotelsListViewController()
-        
-        func makeUIViewController(context: Context) -> some UIViewController {
-            tabBarVC
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-            
-        }
-    }
-}
 
 

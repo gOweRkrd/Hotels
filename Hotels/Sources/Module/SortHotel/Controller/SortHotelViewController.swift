@@ -48,28 +48,5 @@ final class SortHotelViewController: UIViewController {
     }
 }
 
-// MARK: - SwiftUI Canvas
-
-import SwiftUI
-
-struct SortHotelViewControllerProvider: PreviewProvider {
-    static var previews: some View {
-        Container().edgesIgnoringSafeArea(.all)
-            .previewDevice("iPhone 14 Pro ")
-    }
-    
-    struct Container: UIViewControllerRepresentable {
-        
-        let tabBarVC = SortHotelViewController()
-        
-        func makeUIViewController(context: Context) -> some UIViewController {
-            tabBarVC
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-            
-        }
-    }
-}
 
 

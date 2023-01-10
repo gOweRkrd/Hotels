@@ -8,4 +8,5 @@ target 'Hotels' do
 
 pod 'Kingfisher', '~> 7.0'
 
+
 end
