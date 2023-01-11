@@ -29,7 +29,7 @@ final class StarsIcon {
       starsArray.append(starIcon(image: UIImage.filledStarIcon()))
     }
     
-    while starsArray.count !=  starsMaximum {
+    while starsArray.count != starsMaximum {
       starsArray.append(starIcon(image: UIImage.emptyStarIcon()))
     }
     starsArray.append(emptyView)

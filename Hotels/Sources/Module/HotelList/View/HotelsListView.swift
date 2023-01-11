@@ -2,7 +2,7 @@ import UIKit
 
 final class HotelsListView: UIView {
         
-    //MARK: - UIElements
+    // MARK: - UIElements
     
      let tableView: UITableView = {
          
@@ -73,5 +73,5 @@ extension HotelsListView {
 
 private extension CGFloat {
     
-    static let buttonStackViewSizeAnchor : CGFloat = 1
+    static let buttonStackViewSizeAnchor: CGFloat = 1
 }

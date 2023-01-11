@@ -1,5 +1,5 @@
-import UIKit
 import Kingfisher
+import UIKit
 
 final class HotelViewCell: UITableViewCell {
     
@@ -7,7 +7,7 @@ final class HotelViewCell: UITableViewCell {
     
     private let networkService: NetworkServiceSingleHotelProtocol = NetworkService()
     
-    //MARK: - UIElements
+    // MARK: - UIElements
     
     private var activityIndicator: UIActivityIndicatorView = {
         
@@ -86,10 +86,6 @@ final class HotelViewCell: UITableViewCell {
         fatalError("init?(coder: has not been implemented")
     }
     
-    override func prepareForReuse() {
-        
-    }
-    
     // MARK: - Public Methods
     
     func setupContent(with hotel: Hotel) {
@@ -110,10 +106,11 @@ extension HotelViewCell {
         networkService.getHotelInformation(with: hotelID) { [self] result in
             
             switch result {
-                case .success(let hotel):
+                    
+            case .success(let hotel):
                     guard let imageURL = hotel.imageHandler else { return }
                     self.cropImageProcessor(from: .image(imageURL))
-                case .failure(let error):
+            case .failure(let error):
                     print(error.localizedDescription)
             }
         }
@@ -215,12 +212,11 @@ extension HotelViewCell {
 
 private extension CGFloat {
     
-    static let cellBackgroundViewTopBottomAnchor : CGFloat = 6
-    static let cellBackgroundViewLeadingTrailingAnchor : CGFloat = 5
+    static let cellBackgroundViewTopBottomAnchor: CGFloat = 6
+    static let cellBackgroundViewLeadingTrailingAnchor: CGFloat = 5
     
-    static let hotelImageViewWidth : CGFloat = 0.3
+    static let hotelImageViewWidth: CGFloat = 0.3
     
-    static let generalStackViewTopBottomAnchor : CGFloat = 4
-    static let generalStackViewLeadingTrailingAnchor : CGFloat = 8
+    static let generalStackViewTopBottomAnchor: CGFloat = 4
+    static let generalStackViewLeadingTrailingAnchor: CGFloat = 8
 }
-

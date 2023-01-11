@@ -2,7 +2,7 @@ import UIKit
 
 final class DetailInformationView: UIView {
     
-    //MARK: - UIElements
+    // MARK: - UIElements
     
     lazy var hotelImageView: UIImageView = {
         
@@ -23,7 +23,7 @@ final class DetailInformationView: UIView {
     
     lazy var hotelAddres: UILabel = {
         
-        let label = UILabel(textColor:.textGraySet(),
+        let label = UILabel(textColor: .textGraySet(),
                             numberOfLines: 0)
         return label
     }()
@@ -139,12 +139,10 @@ extension DetailInformationView {
 
 private extension CGFloat {
     
-    static let mapButtonHeightAnchor : CGFloat = 0.15
-    static let hotelImageViewSize : CGFloat = 16
-    static let hotelImageViewHeightAnchor : CGFloat = 3 / 4
+    static let mapButtonHeightAnchor: CGFloat = 0.15
+    static let hotelImageViewSize: CGFloat = 16
+    static let hotelImageViewHeightAnchor: CGFloat = 3 / 4
     
-    static let contentStackViewTopAnchor : CGFloat = 20
-    static let contentStackViewSize : CGFloat = 16
+    static let contentStackViewTopAnchor: CGFloat = 20
+    static let contentStackViewSize: CGFloat = 16
 }
-
-

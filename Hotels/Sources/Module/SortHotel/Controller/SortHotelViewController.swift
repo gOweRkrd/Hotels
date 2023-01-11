@@ -2,7 +2,7 @@ import UIKit
 
 final class SortHotelViewController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     let sortView = SortHotelView()
     var hotels: Hotels = []
@@ -47,6 +47,3 @@ final class SortHotelViewController: UIViewController {
         dismiss(animated: true)
     }
 }
-
-
-

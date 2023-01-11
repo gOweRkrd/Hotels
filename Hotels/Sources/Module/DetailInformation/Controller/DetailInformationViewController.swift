@@ -1,9 +1,9 @@
-import UIKit
 import Kingfisher
+import UIKit
 
 final class DetailInformationViewController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     let detailView = DetailInformationView()
     var hotelID: Int?
@@ -50,14 +50,15 @@ extension DetailInformationViewController {
         guard let id = hotelID else { return }
         networkService.getHotelInformation(with: id) { result in
             switch result {
-                case .success(let hotel):
+                    
+            case .success(let hotel):
                     self.hotel = hotel
                     self.setupContent(whith: hotel)
                     guard let imageURL = hotel.imageHandler else { return }
                     
                     self.cropImageProcessor(from: .image(imageURL))
                     
-                case .failure(let error):
+            case .failure(let error):
                     self.showAlert(
                         with: error.localizedDescription,
                         and: "Please try again later or contact Support.")

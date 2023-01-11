@@ -2,7 +2,7 @@ import UIKit
 
 final class SortHotelView: UIView {
     
-    //MARK: - UIElements
+    // MARK: - UIElements
     
     lazy var dismissButton: UIButton = {
         
@@ -102,9 +102,9 @@ extension SortHotelView {
 
 private extension CGFloat {
     
-    static let contentStackViewTopAnchor : CGFloat = 50
-    static let contentStackViewLSizeAnchor : CGFloat = 5
-    static let contentStackViewBottomAnchor : CGFloat = 10
+    static let contentStackViewTopAnchor: CGFloat = 50
+    static let contentStackViewLSizeAnchor: CGFloat = 5
+    static let contentStackViewBottomAnchor: CGFloat = 10
     
-    static let sortedRoomsButtonHeightAnchor : CGFloat = 0.15
+    static let sortedRoomsButtonHeightAnchor: CGFloat = 0.15
 }

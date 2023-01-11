@@ -2,7 +2,7 @@ import UIKit
 
 final class HotelsListViewController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     let hotelView = HotelsListView()
     var hotels: Hotels = []
@@ -64,11 +64,12 @@ extension HotelsListViewController {
         networkService.getHotelsInformation { result in
             
             switch result {
-                case .success(let data):
+                    
+            case .success(let data):
                     self.hotels = data
                     self.dataSorted = true
                     self.hotelView.tableView.reloadData()
-                case .failure(let error):
+            case .failure(let error):
                     self.showAlert(
                         with: "\(error.localizedDescription)",
                         and: "Please try again later or contact Support.")
@@ -112,6 +113,3 @@ extension HotelsListViewController: UITableViewDelegate {
         navigationController?.pushViewController(detailInformationVC, animated: true)
     }
 }
-
-
-

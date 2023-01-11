@@ -1,10 +1,10 @@
-import UIKit
-import MapKit
 import CoreLocation
+import MapKit
+import UIKit
 
 final class MapScreenViewController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     var hotel: Hotel!
     private let mapView = MKMapView()
